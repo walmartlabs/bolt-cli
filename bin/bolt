@@ -11,15 +11,6 @@ var path = require("path");
 var baseDir = process.cwd();
 var boltPath;
 
-var program = require("commander");
-var pkg = require("../package.json");
-
-program
-  .version(pkg.version)
-  .command("init", "initialize a new bolt project")
-  .parse(process.argv);
-
-
 try {
   boltPath = resolve("electrode-bolt", { basedir: baseDir, moduleDirectory: 'node_modules' });
 } catch (e) {
