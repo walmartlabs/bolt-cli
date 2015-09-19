@@ -16,4 +16,6 @@ To list bolt tasks, you can simply run `bolt`.
 
 To run a `bolt` task, run `bolt <task>`. If no task exists, bolt will let you know.
 
-This tool isn't required for using the `electrode-bolt` tool, but it allows you to run `bolt` tasks from the command line easily rather than having to have bolt itself installed globally or having all of your `npm run` tasks directly linked to every task `electrode-bolt` provides.
+## Notes
+
+- This tool isn't required for using the `electrode-bolt` tool, but it allows you to run `bolt` tasks from the command line easily rather than having to have bolt itself installed globally or having all of your `npm run` tasks directly linked to every task `electrode-bolt` provides.
