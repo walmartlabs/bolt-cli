@@ -1,6 +1,6 @@
 {
   "name": "electrode-bolt-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A CLI for electrode-bolt",
   "bin": {
     "bolt": "bin/bolt"
