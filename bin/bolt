@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+"use strict";
+
+process.title = "bolt";
+
+var findup = require("findup-sync");
+var resolve = require("resolve").sync;
+var path = require("path");
+
+var baseDir = process.cwd();
+var boltPath;
+
+var program = require("commander");
+var pkg = require("../package.json");
+
+program
+  .version(pkg.version)
+  .command("init", "initialize a new bolt project")
+  .parse(process.argv);
+
+
+try {
+  boltPath = resolve("electrode-bolt", { basedir: baseDir, moduleDirectory: 'node_modules' });
+} catch (e) {
+  boltPath = findup("lib/electrode-bolt");
+
+  if (!boltPath) {
+    console.log("Unable to find local bolt.");
+    process.exit(99);
+  }
+}
+
+require(boltPath);
