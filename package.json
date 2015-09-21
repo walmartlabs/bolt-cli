@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.8.1",
-    "findup": "^0.1.5",
+    "findup-sync": "^0.1.5",
     "resolve": "^1.1.6"
   }
 }
