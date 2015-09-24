@@ -2,13 +2,15 @@
 
 > electrode `bolt` command line interface.
 
-Install this globally to have access to the bolt command.
+Install this globally to have access to the bolt command. _This is not bolt itself,_ that can be found at [walmartreact/electrode-bolt](https://github.com/walmartreact/electrode-bolt).
 
 ```
 npm install -g electrode-bolt-cli
 ```
 
 ## Usage
+
+### Local Bolt dependency
 
 Within a package that has `electrode-bolt` installed as a dependency:
 
