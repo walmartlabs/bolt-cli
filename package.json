@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "babel src/bolt-cli.js --watch --out-file lib/bolt-cli.js",
-    "build": "babel src --out-file lib/bolt-cli.js",
+    "build": "if [ ! -e lib ]; then mkdir bin; babel src --out-file lib/bolt-cli.js",
     "prepublish": "npm run build",
     "test": "node bin/bolt test"
   },
