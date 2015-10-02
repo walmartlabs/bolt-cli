@@ -27,6 +27,7 @@ To run a `bolt` task, run `bolt <task>`. If no task exists, bolt will let you kn
 ### Scripts
 
 | Command | Action |
+|---|---|
 | `link:dev` | Performs a symlink to your `npm prefix -g` for ease of development |
 | `dev` | Watches `src` for changes, transpiles to `bin/bolt` with `babel` |
 | `build` | Makes `bin` directory if it doesn't exist, transpiles `src` to `bin/bolt` with `babel` |
