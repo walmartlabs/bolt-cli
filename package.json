@@ -6,6 +6,10 @@
     "bolt": "bin/bolt"
   },
   "scripts": {
+    "link:dev": "ln -s $(pwd)/bin/bolt $(npm prefix -g)/bin/bolt",
+    "dev": "babel src/bolt-cli.js --watch --out-file bin/bolt --source-maps inline",
+    "build": "if [ ! -e bin ]; then mkdir bin; fi && babel src --out-file bin/bolt",
+    "prepublish": "build",
     "test": "node bin/bolt test"
   },
   "author": "",
@@ -14,5 +18,8 @@
     "commander": "^2.8.1",
     "findup-sync": "^0.3.0",
     "resolve": "^1.1.6"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23"
   }
 }
