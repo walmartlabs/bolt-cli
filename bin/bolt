@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-
 "use strict";
-
 process.title = "bolt";
-
-require("../index");
+console.log("Running bolt.");
+require("../lib/bolt-cli");

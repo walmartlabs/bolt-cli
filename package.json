@@ -6,6 +6,10 @@
     "bolt": "bin/bolt"
   },
   "scripts": {
+    "link:dev": "ln -s $(pwd) $(npm prefix -g)/lib/node_modules/electrode-bolt-cli",
+    "dev": "babel src/bolt-cli.js --watch --out-file lib/bolt-cli.js",
+    "build": "babel src/bolt-cli.js --out-file lib/bolt-cli.js",
+    "prepublish": "npm run build",
     "test": "node bin/bolt test"
   },
   "author": "",
@@ -14,5 +18,8 @@
     "commander": "^2.8.1",
     "findup-sync": "^0.3.0",
     "resolve": "^1.1.6"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23"
   }
 }
