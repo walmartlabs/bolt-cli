@@ -1,4 +1,4 @@
-# bolt-cli
+# bolt-cli [DEPRECATED REPO]
 
 >  `bolt` command line interface.
 
